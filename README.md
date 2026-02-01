@@ -13,6 +13,9 @@ This project demonstrates a Retrieval Augmented Generation system using **Endee*
 ```bash
 docker compose up -d
 ```
+```bash
+docker ps
+```
 Ensure the Endee container is running on port 8080 before proceeding.
 
 **2. Install Dependencies**
@@ -22,7 +25,7 @@ pip install -r requirements.txt
 
 **3. Ingest Documents**
 ```bash
-python scripts/ingest.py
+python scripts/ingest.py or python -m scripts.ingest
 ```
 
 **4. Run the API Server**
@@ -30,7 +33,7 @@ python scripts/ingest.py
 uvicorn backend.app:app --reload
 ```
 
-Visit `http://localhost:8000/ask?question=What%20is%20a%20vector%20database` to test.
+Visit `http://127.0.0.1:8000/docs` to test.
 
 ## Troubleshooting
 
