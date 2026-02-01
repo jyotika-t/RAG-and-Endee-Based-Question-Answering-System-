@@ -39,3 +39,11 @@ Visit `http://127.0.0.1:8000/docs` to test.
 
 - **Internal Server Error / 503**: Ensure Endee Docker is running (`docker compose up -d`) and documents are ingested (`python scripts/ingest.py`).
 - **Connection refused**: The Endee database must be running at `localhost:8080` before the API can respond.
+
+## Create Virtual Environment 
+
+- ** Create if needed 
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
