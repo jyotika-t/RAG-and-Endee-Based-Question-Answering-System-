@@ -20,6 +20,10 @@ Traditional keyword-based search fails to capture semantic meaning in documents.
 4. User queries are embedded and searched against stored vectors  
 5. Relevant document chunks are retrieved and returned as answers (RAG workflow)
 
+**Architecture Flow:**
+
+User Query → Embedding → Endee Vector Search → Relevant Chunks → Answer
+
 ## How Endee Is Used
 
 Endee is the **core vector database** in this project.
@@ -37,6 +41,24 @@ This demonstrates a real-world use case where **vector search is central**.
 - Semantic search
 - RAG pipeline
 - Agentic AI logic
+
+## Installation
+
+### 1. Install Docker (Required)
+
+Docker is required to run the Endee vector database.
+
+#### Windows / macOS
+1. Download Docker Desktop from:  
+   https://www.docker.com/products/docker-desktop
+2. Install and start Docker Desktop
+3. Ensure Docker is running (Docker icon visible)
+
+Verify installation:
+```bash
+docker --version
+docker compose version
+```
 
 ## Setup
 
