@@ -90,7 +90,7 @@ python scripts/ingest.py or python -m scripts.ingest
 
 **4. Run the API Server**
 ```bash
-uvicorn backend.app:app --reload
+uvicorn backend.app:app --reload or python -m uvicorn backend.app:app --reload
 ```
 
 Visit `http://127.0.0.1:8000/docs` to test.
