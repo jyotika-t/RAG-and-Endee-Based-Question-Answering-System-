@@ -69,7 +69,18 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
-**1. Start Endee Database (required)**
+```bash
+python -m pip install --upgrade pip setuptools wheel
+
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+```
+
+**1. Install Dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+**2. Start Endee Database (required)**
 ```bash
 docker compose up -d
 ```
@@ -77,11 +88,6 @@ docker compose up -d
 docker ps
 ```
 Ensure the Endee container is running on port 8080 before proceeding.
-
-**2. Install Dependencies**
-```bash
-pip install -r requirements.txt
-```
 
 **3. Ingest Documents**
 ```bash
